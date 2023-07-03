@@ -14,7 +14,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Build with Maven
-        run: 
+        run: |
           mvn -f SpringBootHelloWorld --batch-mode --update-snapshots package
           mkdir staging && cp target/*.jar staging
       - name: Persist workflow data as artifacts
