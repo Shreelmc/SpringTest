@@ -24,6 +24,14 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+	<distributionManagement>
+    		<repository>
+      			<id>github</id>
+      			<name>GitHub Packages</name>
+      			<url>https://maven.pkg.github.com/Shreelmc/SpringTest/SpringBootHelloWorld</url>
+    		</repository>
+  	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
