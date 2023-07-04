@@ -13,7 +13,7 @@ jobs:
         with:
           java-version: '8'
           distribution: 'temurin'
-      - name: Build with Maven
+      - name: Build with Mavens
         run: |
           mvn -f SpringBootHelloWorld --batch-mode --update-snapshots package
           mkdir staging && cp SpringBootHelloWorld/target/*.jar staging
